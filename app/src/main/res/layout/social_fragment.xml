@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weatherback">
+
+    <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include layout="@layout/title_bar"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar">
+
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 06月26日"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_below="@id/tv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   石家庄"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id="@+id/q2"
+            android:layout_below="@id/q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="晴 24~36℃"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id="@+id/q3"
+            android:layout_below="@id/q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  多云转晴"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id="@+id/q4"
+            android:layout_below="@id/q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 南风3~4级"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_below="@+id/q4"
+            android:id="@+id/tv_content"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="了解更多"
+            android:background="@drawable/btn"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

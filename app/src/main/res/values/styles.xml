@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/themecolor</item>
+        <item name="colorPrimaryDark">@color/themecolor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarSize">44dp</item>
+    </style>
+
+    <!--设置状态栏透明化-->
+    <style name="TranslucentTheme" parent="AppTheme" />
+
+    <style name="main_publishdialog_style" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>
